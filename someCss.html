@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>someCcc</title>
+	<link rel="stylesheet" type="anExternal/css" href="anExternal.css" />
 	<style>
-	div {
+	div.float {
 		width: 50px;
 		height: 50px;
 		background: pink;
@@ -24,8 +25,23 @@
 		100%	{top: 100px;}
 	}
 	p.dotted {border-style: dotted;}
+	img.float {
+		float:right;
+	}
+	h2.background {
+		background-image: url('background.jpg');
+		text-align: center
+	}
+	h2.round {
+		border: 2px solid;
+		padding-bottom: 10px;
+		border-top-left-radius: 2em;
+		border-top-right-radius: 2em;
+		border-bottom-left-radius: 2em;
+		border-bottom-right-radius: 2em;
+	}
 	</style>
-}
+
 	
 </head>
 <body>
@@ -36,10 +52,18 @@
 	<h2>picture 2</h2>
 	<img src="seattle2.jpg" alt="seattle2"	style="width: 50px;height: 50px;">
 	<h2>one more CSS</h2>
-	<div></div>
+	<div class=float></div>
 	<h1></h1>
+	<h2 class=background>text in the center of a picture</h2>
 	<h2>image with margin of 20</h2>
 	<img src="background.jpg" alt="background" style="width: 100px; height: 100px; margin: 20px 20px">
 	<p class="dotted"> text with dotted border. </p>
+	<h2>floated element (picture in the right side)</h2>
+	<img class="float" src="dark_wood.png" alt="dark_wood" style="width: 100px; height: 100px">
+	<h1></h1>
+	<h2 class=round>element with rounded border corners</h2>
+	<div id="Content">
+		<p>With an external style sheet</p>
+	</div>
 </body>
 </html>
